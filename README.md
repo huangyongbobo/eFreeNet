@@ -1,5 +1,6 @@
 # eFateNet
-This is the official implementation of eFateNet based on pytorch: Remote Sensing Object Counting through Regression Ensembles and Learning to Rank.
+This is the official implementation of eFateNet based on pytorch. This repository contains the PyTorch model code for the paper.  
+*Remote Sensing Object Counting through Regression Ensembles and Learning to Rank.*
 # The Overall Framework
 
 # Dataset
