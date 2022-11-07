@@ -10,16 +10,14 @@ This is the official implementation of eFateNet based on pytorch. This repositor
 ## Environment
 
 The following is our code running environment for your reference. We use Anaconda as the environment to install all packages.  
-`python: 3.7`  
-
-`pytorch: 1.4.0`  
-
-`cuda: 9.2`
+python: 3.7
+pytorch: 1.4.0  
+cuda: 9.2
 ## Code Structure
 
-* Dataset:
-* model: the main codes of the eFateNet architecture.  
-* ApproxNDCGLoss: the main codes of loss based on Learning to Rank.  
-* Neg_Cor_Loss: the main codes of loss based on Negative Correlation Learning.  
-* Train: the main code to train the model.  
-* Test: the main code to evaluate the model.  
+* `Dataset`:
+* `model`: the main codes of the eFateNet architecture.  
+* `ApproxNDCGLoss`: the main codes of loss based on Learning to Rank.  
+* `Neg_Cor_Loss`: the main codes of loss based on Negative Correlation Learning.  
+* `Train`: the main code to train the model.  
+* `Test`: the main code to evaluate the model.  
