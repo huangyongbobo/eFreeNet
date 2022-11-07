@@ -7,6 +7,15 @@ This is the official implementation of eFateNet based on pytorch. This repositor
 * Download VisDrone2019 People dataset from [here](https://drive.google.com/file/d/19gh-ZF-FpoTNNtVh_gScRc9pFlqvktpU/view?usp=sharing)
 * Download VisDrone2019 Vehicle dataset from [here](https://drive.google.com/file/d/12bCfAWEVurX6Z0RuAbegywkY7Z-UDU19/view?usp=sharing)
 ## Environment
-
+The following is our code running environment for your reference.
+Anaconda: 
+python: 
+pytorch: 
+cuda: 
 ## Code Structure
-
+* Dataset:
+* model: 
+* ApproxNDCGLoss: 
+* Neg_Cor_Loss: 
+* Train: 
+* Test: 
