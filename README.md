@@ -22,9 +22,9 @@ cuda: 9.2
 ```
 ## Code Structure
 
-* `Dataset`: the main code of the dataset class, which return image and ground truth.  
+* `Dataset`: the main codes of the dataset class, which return image and ground truth.  
 * `model`: the main codes of the eFateNet architecture. If you want to use different number of regression members, you need to make simple modifications to the network structure.  
 * `ApproxNDCGLoss`: the main codes of loss based on Learning to Rank.  
 * `Neg_Cor_Loss`: the main codes of loss based on Negative Correlation Learning.  
-* `Train`: the main code to train the model.  
-* `Test`: the main code to evaluate the model.
+* `Train`: the main codes to train the model.  
+* `Test`: the main codes to evaluate the model.
