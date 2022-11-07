@@ -7,7 +7,7 @@ from matplotlib import pyplot as plt
 
 
 def main():
-    root = '/media/ysliu/6b94d4ca-f5c4-46ae-8497-af46d2544dfc/Maoer/RSOC_building'
+    root = '.../RSOC_building'
     building_train = os.path.join(root, 'train_data', 'images')
     building_test = os.path.join(root, 'test_data', 'images')
 
