@@ -1,6 +1,10 @@
 # eFateNet
+
 This is the official implementation of eFateNet based on pytorch. This repository contains the PyTorch model code for the paper: ***Remote Sensing Object Counting through Regression Ensembles and Learning to Rank.***
 ## The Overall Framework
+
+
+## Visualization
 
 ## Dataset
 
@@ -18,9 +22,9 @@ cuda: 9.2
 ```
 ## Code Structure
 
-* `Dataset`:
+* `Dataset`: the main code of the dataset class, which return image and ground truth.  
 * `model`: the main codes of the eFateNet architecture.  
 * `ApproxNDCGLoss`: the main codes of loss based on Learning to Rank.  
 * `Neg_Cor_Loss`: the main codes of loss based on Negative Correlation Learning.  
 * `Train`: the main code to train the model.  
-* `Test`: the main code to evaluate the model.  
+* `Test`: the main code to evaluate the model.
