@@ -11,7 +11,9 @@ This is the official implementation of eFateNet based on pytorch. This repositor
 
 The following is our code running environment for your reference. We use Anaconda as the environment to install all packages.  
 `python: 3.7`  
+
 `pytorch: 1.4.0`  
+
 `cuda: 9.2`
 ## Code Structure
 
