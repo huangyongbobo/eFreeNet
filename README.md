@@ -3,19 +3,19 @@ This is the official implementation of eFateNet based on pytorch. This repositor
 ## The Overall Framework
 
 ## Dataset
-* Download RSOC dataset from [here](https://github.com/gaoguangshuai/Counting-from-Sky-A-Large-scale-Dataset-for-Remote-Sensing-Object-Counting-and-A-Benchmark-Method)  
-* Download VisDrone2019 People dataset from [here](https://drive.google.com/file/d/19gh-ZF-FpoTNNtVh_gScRc9pFlqvktpU/view?usp=sharing)
-* Download VisDrone2019 Vehicle dataset from [here](https://drive.google.com/file/d/12bCfAWEVurX6Z0RuAbegywkY7Z-UDU19/view?usp=sharing)
+* Download RSOC dataset from [here](https://github.com/gaoguangshuai/Counting-from-Sky-A-Large-scale-Dataset-for-Remote-Sensing-Object-Counting-and-A-Benchmark-Method) After downloading the RSOC Building dataset, you need to use the RSOC_Preprocess.py to generate the ground truth.  
+* Download VisDrone2019 People dataset from [here](https://drive.google.com/file/d/19gh-ZF-FpoTNNtVh_gScRc9pFlqvktpU/view?usp=sharing)  
+* Download VisDrone2019 Vehicle dataset from [here](https://drive.google.com/file/d/12bCfAWEVurX6Z0RuAbegywkY7Z-UDU19/view?usp=sharing)  
 ## Environment
-The following is our code running environment for your reference.
+The following is our code running environment for your reference.  
 Anaconda: 
 python: 
 pytorch: 
 cuda: 
 ## Code Structure
 * Dataset:
-* model: 
-* ApproxNDCGLoss: 
-* Neg_Cor_Loss: 
-* Train: 
-* Test: 
+* model: the main codes of the eFateNet architecture.  
+* ApproxNDCGLoss: the main codes of loss based on Learning to Rank.  
+* Neg_Cor_Loss: the main codes of loss based on Negative Correlation Learning.  
+* Train: the main code to train the model.  
+* Test: the main code to evaluate the model.  
