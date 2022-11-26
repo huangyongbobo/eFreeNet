@@ -81,7 +81,6 @@ class ApproxNDCG(torch.nn.Module):
         batch_stds = self.getCorrel(labels, Max_index, Min_index)
         batch_stds = 1 - (batch_stds / (max_target - min_target))
         batch_stds = batch_stds * T
-        # batch_stds_numpy = batch_stds.cpu().numpy()
 
         batch_preds = self.getSimilar(pred, Max_index, Min_index)
         batch_preds = 1 - batch_preds
