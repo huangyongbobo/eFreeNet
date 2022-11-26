@@ -12,7 +12,6 @@ def main():
     building_test = os.path.join(root, 'test_data', 'images')
 
     path_sets = [building_train, building_test]
-
     img_paths = []
     for path in path_sets:
         for img_path in glob.glob(os.path.join(path, '*.jpg')):
