@@ -15,7 +15,6 @@ class Negative_loss(torch.nn.Module):
                 b = torch.sum((output_del - pred_avg), dim=0)
                 c = torch.mul(a, b)
                 molecule = torch.sum(c)
-
                 loss2 += molecule / len(pred_avg)
             else:
                 output_del = torch.cat((output[0:i, :], output[i + 1:, :]), dim=0)
@@ -23,7 +22,6 @@ class Negative_loss(torch.nn.Module):
                 b = torch.sum((output_del - pred_avg), dim=0)
                 c = torch.mul(a, b)
                 molecule = torch.sum(c)
-
                 loss2 += molecule / len(pred_avg)
 
         return loss2
