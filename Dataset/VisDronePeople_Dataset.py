@@ -18,8 +18,7 @@ class cdpeopleDataset(data.Dataset):
         self.num_samples = len(self.data_files)
         self.transform = transforms.Compose([transforms.Resize((512, 768)),
                                              transforms.ToTensor(),
-                                             transforms.Normalize(mean=[0.485, 0.456, 0.406],
-                                                                  std=[0.229, 0.224, 0.225]),
+                                             transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
                                              ])
         self.train = train
 
