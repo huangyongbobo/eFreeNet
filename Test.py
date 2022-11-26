@@ -19,7 +19,7 @@ from model import VggNetModel
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(description='Test of eFateNet')
+    parser = argparse.ArgumentParser(description='Test of eFreeNet')
 
     parser.add_argument('--dataset', type=str, default='RSOC_building', help='object counting dataset',
                         choices=['RSOC_building', 'VisDronePeople', 'VisDroneVehicle'])
