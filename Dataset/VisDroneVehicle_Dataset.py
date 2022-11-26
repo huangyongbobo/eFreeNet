@@ -15,8 +15,7 @@ class cdvehicleDataset(data.Dataset):
         self.gt_path = gt_path
         self.transform = transforms.Compose([transforms.Resize((512, 768)),
                                              transforms.ToTensor(),
-                                             transforms.Normalize(mean=[0.485, 0.456, 0.406],
-                                                                  std=[0.229, 0.224, 0.225]),
+                                             transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
                                              ])
         self.data_files = [filename for filename in os.listdir(self.img_path) \
                            if os.path.isfile(os.path.join(self.img_path, filename))]
