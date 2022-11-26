@@ -61,7 +61,6 @@ def main():
     image_path = '.../RSOC_building/train_data/images'
     # image_path = '.../VisDrone-People/train/images'
     # image_path = '.../VisDrone-Vehicle/train/images'
-
     target_path = '.../RSOC_building/train_data/target_center'
     # target_path = '.../VisDrone-People/train/Ground_Truth'
     # target_path = '.../VisDrone-Vehicle/train/Ground_Truth'
