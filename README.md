@@ -1,6 +1,6 @@
 # eFreeNet
 
-This is the official implementation of eFateNet based on pytorch. This repository contains the PyTorch model code for the paper: ***Remote Sensing Object Counting through Regression Ensembles and Learning to Rank.***
+This is the official implementation of eFreeNet based on pytorch. This repository contains the PyTorch model code for the paper: ***Remote Sensing Object Counting through Regression Ensembles and Learning to Rank.***
 ## The Overall Framework
 
 ![](https://github.com/huangyongbobo/eFateNet/blob/main/architecture.png)
@@ -25,7 +25,7 @@ cuda: 9.2
 
 * `Extend_sample`: the main codes for increasing the number of training samples. (...)
 * `Dataset`: the main codes of the dataset class, which return image and ground truth.  
-* `model`: the main codes of the eFateNet architecture. If you want to use different number of regression members, you need to make simple modifications to the network structure.  
+* `model`: the main codes of the eFreeNet architecture. If you want to use different number of regression members, you need to make simple modifications to the network structure.  
 * `ApproxNDCGLoss`: the main codes of loss based on Learning to Rank.  
 * `Neg_Cor_Loss`: the main codes of loss based on Negative Correlation Learning.  
 * `Train`: the main codes to train the model.  
