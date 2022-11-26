@@ -145,5 +145,4 @@ class VggNetModel(nn.Module):
                 pred = self.layerlist[index](feature[:, index * 512:(index + 1) * 512])
                 output1 = torch.cat((output1, pred.transpose(0, 1)),)
                 output2 = torch.cat((output2, self.layerlist2[index](pred).transpose(0, 1)),)
-
         return output1, output2
