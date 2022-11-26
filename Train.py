@@ -20,7 +20,7 @@ from Neg_cor_loss import Negative_loss
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(description='Train of eFateNet')
+    parser = argparse.ArgumentParser(description='Train of eFreeNet')
 
     parser.add_argument('--dataset', type=str, default='RSOC_building', help='object counting dataset',
                         choices=['RSOC_building', 'VisDronePeople', 'VisDroneVehicle'])
