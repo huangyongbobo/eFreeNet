@@ -88,13 +88,13 @@ def extend_sample(dataset_list, target_path, target_max, target_min, range_num):
 
 
 def main():
-    image_path = '/media/ysliu/6b94d4ca-f5c4-46ae-8497-af46d2544dfc/Maoer/RSOC_building/train_data/images'
-    # image_path = '/media/ysliu/6b94d4ca-f5c4-46ae-8497-af46d2544dfc/Maoer/VisDrone-People/train/images'
-    # image_path = '/media/ysliu/6b94d4ca-f5c4-46ae-8497-af46d2544dfc/Maoer/VisDrone-Vehicle/train/images'
+    image_path = '.../RSOC_building/train_data/images'
+    # image_path = '.../VisDrone-People/train/images'
+    # image_path = '.../VisDrone-Vehicle/train/images'
 
-    target_path = '/media/ysliu/6b94d4ca-f5c4-46ae-8497-af46d2544dfc/Maoer/RSOC_building/train_data/target_center'
-    # target_path = '/media/ysliu/6b94d4ca-f5c4-46ae-8497-af46d2544dfc/Maoer/VisDrone-People/train/Ground_Truth'
-    # target_path = '/media/ysliu/6b94d4ca-f5c4-46ae-8497-af46d2544dfc/Maoer/VisDrone-Vehicle/train/Ground_Truth'
+    target_path = '.../RSOC_building/train_data/target_center'
+    # target_path = '.../VisDrone-People/train/Ground_Truth'
+    # target_path = '.../VisDrone-Vehicle/train/Ground_Truth'
 
     train_list = []
     for img_path in glob.glob(os.path.join(image_path, '*.jpg')):
