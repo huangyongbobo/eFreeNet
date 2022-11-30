@@ -12,8 +12,9 @@ This is the official implementation of eFreeNet based on pytorch. This repositor
 * Download VisDrone2019 Vehicle dataset from [here](https://drive.google.com/file/d/12bCfAWEVurX6Z0RuAbegywkY7Z-UDU19/view?usp=sharing).  
 
 ## Visualization
+We visualize the feature maps and heat maps of the last convolutional layers of model. Models 3 (the traditional global regression), 5 (Ranking_loss + estimation_loss), and 9 (eFreeNet) are used for visualization. 
 
-
+![](https://github.com/huangyongbobo/eFreeNet/blob/main/Visualization.png)
 
 ## Environment
 
