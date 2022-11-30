@@ -9,6 +9,7 @@ class Ambiguity_loss(torch.nn.Module):
     def forward(self, output, pred_avg):
         """
         Compute ambiguity_loss in a min-batch
+        
         Arguments:
             output: The output of linear transformation(LT) layers in a min-batch
             pred_avg: The average output of all members
