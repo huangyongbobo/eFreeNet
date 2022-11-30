@@ -23,9 +23,7 @@ def parse_args():
 
     parser.add_argument('--dataset', type=str, default='RSOC_building', help='object counting dataset',
                         choices=['RSOC_building', 'VisDronePeople', 'VisDroneVehicle'])
-    parser.add_argument('--test_dir', type=str,
-                        default='/media/ysliu/6b94d4ca-f5c4-46ae-8497-af46d2544dfc/Maoer'
-                                '/RSOC_building/test_data/images', help='test set path')
+    parser.add_argument('--test_dir', type=str, default='.../RSOC_building/test_data/images', help='test set path')
     parser.add_argument('--test_batch_size', type=int, default=1, help='batch_size of test')
     parser.add_argument('--num_workers', type=int, default=4)
     parser.add_argument('--ensemble_num', type=int, default=8, help='number of members of ensemble learning')
