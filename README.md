@@ -31,6 +31,6 @@ cuda: 9.2
 * `Dataset`: the main codes of the dataset class, which return image and ground truth.  
 * `model`: the main codes of the eFreeNet architecture. If you want to use different number of members, you need to make simple modifications to the network structure. 
 * `ranking_loss`: the main codes of loss based on learning to rank.  
-* `ambiguity_loss`: the main codes of loss based on regression ensembles .  
+* `ambiguity_loss`: the main codes of loss based on regression ensembles.  
 * `train`: the main codes to train the model.  
 * `test`: the main codes to evaluate the model.
