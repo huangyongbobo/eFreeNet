@@ -24,12 +24,8 @@ def parse_args():
 
     parser.add_argument('--dataset', type=str, default='RSOC_building', help='object counting dataset',
                         choices=['RSOC_building', 'VisDronePeople', 'VisDroneVehicle'])
-    parser.add_argument('--train_dir', type=str,
-                        default='/media/ysliu/6b94d4ca-f5c4-46ae-8497-af46d2544dfc/Maoer'
-                                '/RSOC_building/train_data/images', help='training set path')
-    parser.add_argument('--val_dir', type=str,
-                        default='/media/ysliu/6b94d4ca-f5c4-46ae-8497-af46d2544dfc/Maoer'
-                                '/RSOC_building/val_data/images', help='validate set path')
+    parser.add_argument('--train_dir', type=str, default='.../RSOC_building/train_data/images', help='training set path')
+    parser.add_argument('--val_dir', type=str, default='.../RSOC_building/val_data/images', help='validate set path')
     parser.add_argument('--max_epoch', type=int, default=400, help='max training epoch')
     parser.add_argument('--train_batch_size', type=int, default=8, help='batch_size of train')
     parser.add_argument('--val_batch_size', type=int, default=1, help='batch_size of validate')
@@ -40,11 +36,8 @@ def parse_args():
     parser.add_argument('--num_workers', type=int, default=4)
     parser.add_argument('--seed', type=int, default=3050, help='Random seed')
     parser.add_argument('--ensemble_num', type=int, default=8, help='number of members of ensemble learning')
-    parser.add_argument('--max_target', type=int, default=349, help='maximum target in training set')
-    parser.add_argument('--min_target', type=int, default=10, help='minimum target in training set')
-    # RSOC_building：train_max-142, train_min-17
-    # VisDronePeople: train_max-289, train_min-10
-    # VisDroneVehicle: train_max-349,train_min-10
+    parser.add_argument('--max_target', type=int, default=142, help='maximum target in training set')
+    parser.add_argument('--min_target', type=int, default=17, help='minimum target in training set')
     parser.add_argument('--T', type=float, default=30, help='relevance coefficient in ranking_loss')
     parser.add_argument('--lambdas', type=float, default=0.1, help='weight of ambiguity_loss')
     parser.add_argument('--miu', type=float, default=0.1, help='weight of estimation loss')
