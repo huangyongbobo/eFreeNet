@@ -39,11 +39,11 @@ def parse_args():
     parser.add_argument('--max_target', type=int, default=142, help='maximum target in training set')
     parser.add_argument('--min_target', type=int, default=17, help='minimum target in training set')
     parser.add_argument('--T', type=float, default=30, help='relevance coefficient in ranking_loss')
-    parser.add_argument('--lambda', type=float, default=0.1, help='weight of ambiguity_loss')
+    parser.add_argument('--lambdas', type=float, default=0.1, help='weight of ambiguity_loss')
     parser.add_argument('--mu', type=float, default=0.1, help='weight of estimation loss')
 
     args = parser.parse_args()
-    return args
+    return argss
 
 
 def main():
@@ -134,7 +134,7 @@ def train(args, model, loss_function, loss_function2, optimizer, epoch, device):
         pred_avg = pred_avg / args.ensemble_num
         ambiguity_loss = loss_function2(output2.to(device), pred_avg.to(device))
 
-        loss = ranking_loss.to(device) + args.lambda * ambiguity_loss + args.mu * estimation_loss
+        loss = ranking_loss.to(device) + args.lambdas * ambiguity_loss + args.mu * estimation_loss
         loss.backward()
         optimizer.step()
         running_loss += loss.item()
