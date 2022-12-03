@@ -28,8 +28,8 @@ cuda: 9.2
 ## Code Structure
 
 * `extend_sample`: the main codes for increasing the number of train images. We expand the training sets to alleviate the problem of unbalanced data. 
-* `Dataset`: the main codes of the dataset class, which return image and ground truth.  
-* `model`: the main codes of the eFreeNet architecture. If you want to use different number of members, you need to make simple modifications to the network structure. 
+* `Dataset`: the main codes of dataloader, which return image and ground truth.  
+* `model`: the main codes of the eFreeNet architecture. If you want to use different number of learners, you need to make simple modifications to the network structure. 
 * `ranking_loss`: the main codes of loss based on learning to rank.  
 * `ambiguity_loss`: the main codes of loss based on regression ensembles.  
 * `train`: the main codes to train the model.  
