@@ -11,7 +11,7 @@ from PIL import Image
 
 class VD_vehicle_Dataset(data.Dataset):
     """
-    Custom VisDrone2019 Vehicle dataset Class
+    The dataloader of VisDrone2019 Vehicle dataset
 
     Arguments:
         img_path: Path of images
