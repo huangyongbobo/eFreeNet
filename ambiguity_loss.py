@@ -12,7 +12,7 @@ class Ambiguity_loss(torch.nn.Module):
         
         Arguments:
             output: The output of linear transformation(LT) layers in a min-batch
-            pred_avg: The average output of all members
+            pred_avg: The average value of output of all learners
 
         Returns:
             ambiguity_loss: ambiguity_loss in a min-batch
