@@ -3,6 +3,7 @@
 This is the official implementation of eFreeNet based on pytorch. This repository contains the PyTorch model code for the paper: ***Remote Sensing Object Counting through Regression Ensembles and Learning to Rank.***
 ## The Overall Framework
 
+Note that only one input image is presented for the sake of clarity in illustration. In actual fact, what the Learning to Rank task seeks to rank are all training images in a mini-batch.
 ![](https://github.com/huangyongbobo/eFateNet/blob/main/architecture.png)
 
 ## Dataset
