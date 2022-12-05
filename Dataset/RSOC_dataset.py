@@ -9,7 +9,7 @@ from torchvision import transforms
 
 class RSOC_Dataset(Dataset):
     """
-    Custom RSOC dataset Class
+    The dataloader of RSOC dataset
 
     Arguments:
         root: Images list
