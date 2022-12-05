@@ -2,9 +2,11 @@
 
 This website provides a PyTorch implementation of eFreeNet. The repository contains source code for the paper entitled ***"Remote Sensing Object Counting through Regression Ensembles and Learning to Rank."***
 
+
 ## Overall Framework
 
 ![](https://github.com/huangyongbobo/eFateNet/blob/main/architecture.png)
+
 
 ## Dataset
 
@@ -12,11 +14,14 @@ This website provides a PyTorch implementation of eFreeNet. The repository conta
 * Download VisDrone2019-People dataset from [here](https://drive.google.com/file/d/19gh-ZF-FpoTNNtVh_gScRc9pFlqvktpU/view?usp=sharing).  
 * Download VisDrone2019-Vehicle dataset from [here](https://drive.google.com/file/d/12bCfAWEVurX6Z0RuAbegywkY7Z-UDU19/view?usp=sharing).  
 
+
 ## Visualization
 
 We visualize the feature maps and heat maps of the last convolutional layers. Models 3 (the traditional global regression), 5 (the traditional global regression coupled with learning to rank), and 9 (eFreeNet) are used for visualization. The results are shown as follows.
 
+
 ![](https://github.com/huangyongbobo/eFreeNet/blob/main/visualization.png)
+
 
 ## Environment
 
@@ -27,6 +32,7 @@ torchvision: 0.5.0
 cuda: 9.2 
 numpy: 1.19.4
 ```
+
 
 ## Code Structure
 
