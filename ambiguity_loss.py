@@ -8,14 +8,14 @@ class Ambiguity_loss(torch.nn.Module):
 
     def forward(self, output, pred_avg):
         """
-        Compute ambiguity_loss in a min-batch
+        Compute ambiguity_loss in a mini-batch
         
         Arguments:
-            output: The output of linear transformation(LT) layers in a min-batch
+            output: The output of linear transformation(LT) layers in a mini-batch
             pred_avg: The average value of output of all learners
 
         Returns:
-            ambiguity_loss: ambiguity_loss in a min-batch
+            ambiguity_loss: ambiguity_loss in a mini-batch
         """
         ambiguity_loss = 0
         for i, cur_output in enumerate(output):
