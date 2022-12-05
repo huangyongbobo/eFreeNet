@@ -42,9 +42,9 @@ class Ranking_loss(torch.nn.Module):
         Compute relevance list
 
         Arguments:
-            labels: Ground Truth count in a min-batch
-            Max_index: The index of Max_label in a min-batch
-            Min_index: The index of Min_label in a min-batch
+            labels: Ground Truth count in a mini-batch
+            Max_index: The index of Max_label in a mini-batch
+            Min_index: The index of Min_label in a mini-batch
 
         Returns:
             y_true: The relevance list for each retrieval image
@@ -72,9 +72,9 @@ class Ranking_loss(torch.nn.Module):
         Compute similarity list
 
         Arguments:
-            pred: Count indexes in a min-batch
-            Max_index: The index of Max_label in a min-batch
-            Min_index: The index of Min_label in a min-batch
+            pred: Count indexes in a mini-batch
+            Max_index: The index of Max_label in a mini-batch
+            Min_index: The index of Min_label in a mini-batch
 
         Returns:
             y_pred: The similarity list for each retrieval image
@@ -99,19 +99,19 @@ class Ranking_loss(torch.nn.Module):
 
     def forward(self, pred, labels, Max_index, Min_index, max_target, min_target, T):
         """
-        Calculate ranking_loss in a min-batch
+        Calculate ranking_loss in a mini-batch
 
         Arguments:
-            pred: Count indexes(the output of Ranking layers) in a min-batch
-            labels: Ground Truth count in a min-batch
-            Max_index: The index of Max_label in a min-batch
-            Min_index: The index of Min_label in a min-batch
+            pred: Count indexes(the output of Ranking layers) in a mini-batch
+            labels: Ground Truth count in a mini-batch
+            Max_index: The index of Max_label in a mini-batch
+            Min_index: The index of Min_label in a mini-batch
             max_target: Max_label in training set
             min_target: Min_label in training set
             T: Relevance coefficient
 
         Returns:
-            batch_loss: ranking_loss in a min-batch
+            batch_loss: ranking_loss in a mini-batch
         """
         batch_stds = self.getCorrel(labels, Max_index, Min_index)
         batch_stds = 1 - (batch_stds / (max_target - min_target))
