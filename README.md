@@ -8,7 +8,7 @@ This website provides a PyTorch implementation of eFreeNet. The repository conta
 
 ## Dataset
 
-* Download RSOC datasets from [here](https://github.com/gaoguangshuai/Counting-from-Sky-A-Large-scale-Dataset-for-Remote-Sensing-Object-Counting-and-A-Benchmark-Method). After downloading the RSOC-Building dataset, you need to use the RSOC_building_preprocess.py to generate ground truths.  
+* Download RSOC datasets from [here](https://github.com/gaoguangshuai/Counting-from-Sky-A-Large-scale-Dataset-for-Remote-Sensing-Object-Counting-and-A-Benchmark-Method). After downloading the RSOC-Building dataset, you need to use the `RSOC_building_preprocess.py` to generate ground truths.  
 * Download VisDrone2019-People dataset from [here](https://drive.google.com/file/d/19gh-ZF-FpoTNNtVh_gScRc9pFlqvktpU/view?usp=sharing).  
 * Download VisDrone2019-Vehicle dataset from [here](https://drive.google.com/file/d/12bCfAWEVurX6Z0RuAbegywkY7Z-UDU19/view?usp=sharing).  
 
