@@ -19,12 +19,12 @@ We visualize the feature maps and heat maps of the last convolutional layers. Mo
 
 ## Environment
 
-The following is our code running environment for your reference. We use Anaconda as the environment to install all packages.  
-
 ```
 python: 3.7
 pytorch: 1.4.0  
-cuda: 9.2
+torchvision: 0.5.0
+cuda: 9.2 
+numpy: 1.19.4
 ```
 
 ## Code Structure
