@@ -99,7 +99,7 @@ class Ranking_loss(torch.nn.Module):
 
     def forward(self, pred, labels, Max_index, Min_index, max_target, min_target, T):
         """
-        Call each function to calculate ranking_loss
+        Calculate ranking_loss in a min-batch
 
         Arguments:
             pred: Count indexes(the output of Ranking layers) in a min-batch
