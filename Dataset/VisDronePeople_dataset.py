@@ -11,7 +11,7 @@ from PIL import Image
 
 class VD_people_Dataset(data.Dataset):
     """
-    Custom VisDrone2019 People dataset Class
+    The dataloader of VisDrone2019 People dataset
 
     Arguments:
         img_path: Path of images
