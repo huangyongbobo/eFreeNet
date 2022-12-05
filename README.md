@@ -1,9 +1,9 @@
 # eFreeNet
 
 This is the official implementation of eFreeNet based on pytorch. This repository contains the PyTorch model code for the paper: ***Remote Sensing Object Counting through Regression Ensembles and Learning to Rank.***
+
 ## The Overall Framework
 
-Note that only one input image is presented for the sake of clarity in illustration. In actual fact, what the Learning to Rank task seeks to rank are all training images in a mini-batch.
 ![](https://github.com/huangyongbobo/eFateNet/blob/main/architecture.png)
 
 ## Dataset
@@ -13,7 +13,6 @@ Note that only one input image is presented for the sake of clarity in illustrat
 * Download VisDrone2019 Vehicle dataset from [here](https://drive.google.com/file/d/12bCfAWEVurX6Z0RuAbegywkY7Z-UDU19/view?usp=sharing).  
 
 ## Visualization
-We visualize the feature maps and heat maps of the last convolutional layers of model. Model 3 (the traditional global regression), model 5 (Ranking_loss+estimation_loss), and model 9 (eFreeNet) are used for visualization. The results are shown in the following figure. 
 
 ![](https://github.com/huangyongbobo/eFreeNet/blob/main/visualization.png)
 
@@ -26,6 +25,7 @@ python: 3.7
 pytorch: 1.4.0  
 cuda: 9.2
 ```
+
 ## Code Structure
 
 * `extend_sample`: the main codes for increasing the number of train images. We expand the training sets to alleviate the problem of unbalanced data. 
