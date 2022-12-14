@@ -1,6 +1,6 @@
 # eFreeNet
 
-This website provides a PyTorch implementation of eFreeNet. The repository contains source code for the paper entitled ***"Remote Sensing Object Counting through Regression Ensembles and Learning to Rank."***
+This website provides a PyTorch implementation of eFreeNet. The repository contains source code for the paper entitled ***"Remote Sensing Object Counting through Regression Ensembles and Learning to Rank".***
 
 
 ## Overall Framework
