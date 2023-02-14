@@ -19,7 +19,7 @@ This website provides a PyTorch implementation of eFreeNet. The repository conta
 
 We visualize the feature maps and heat maps of the last convolutional layers. Models 3 (the traditional global regression), 5 (the traditional global regression coupled with learning to rank), and 9 (eFreeNet) are used for visualization. The results are shown as follows. 
 
-![](https://github.com/huangyongbobo/eFreeNet/blob/main/visualization.png)
+![]()
 
 
 ## Environment
