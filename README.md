@@ -47,8 +47,6 @@ numpy: 1.19.4
 ## Reference
 
 ```
-* Yongbo Huang, Yuanpei Jin, Liqiang Zhang, and Yishu Liu*. 
-* “Remote Sensing Object Counting Through Regression Ensembles and Learning to Rank,” 
-* IEEE Transactions on Geoscience and Remote Sensing, 
-* DOI: 10.1109/TGRS.2023.3266884, Apr. 2023.
+Yongbo Huang, Yuanpei Jin, Liqiang Zhang, and Yishu Liu*. “Remote Sensing Object Counting Through Regression Ensembles and Learning to Rank,” 
+IEEE Transactions on Geoscience and Remote Sensing, DOI: 10.1109/TGRS.2023.3266884, Apr. 2023.
 ```
