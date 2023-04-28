@@ -51,10 +51,10 @@ This project is for research purpose only. If you find this project is useful fo
 @ARTICLE{10102292,
   author={Huang, Yongbo and Jin, Yuanpei and Zhang, Liqiang and Liu, Yishu},
   journal={IEEE Transactions on Geoscience and Remote Sensing}, 
-  title={Remote Sensing Object Counting Through Regression Ensembles and Learning to Rank†}, 
+  title={Remote Sensing Object Counting Through Regression Ensembles and Learning to Rank}, 
   year={2023},
-  volume={},
+  volume={61},
   number={},
-  pages={1-1},
+  pages={1-17},
   doi={10.1109/TGRS.2023.3266884}}
 ```
